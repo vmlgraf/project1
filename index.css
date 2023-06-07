@@ -1,0 +1,137 @@
+:root {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background-color: lavenderblush;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+    transition: 2s ease;
+  }
+  
+  header {
+    flex: 0 0 100%;
+  }
+  
+  main {
+    flex: 0 0 80%;
+  }
+  
+  aside {
+    flex: 0 0 20%;
+  }
+  
+  footer {
+    flex: 0 0 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  label {
+    flex: 0 0 35%;
+  }
+  
+  input,
+  textarea,
+  select {
+    flex: 0 0 60%;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  h1 {
+    font-size: 25px;
+  }
+
+  button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background-color: palevioletred;
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    padding: 0.2em;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: plum;
+  }
+
+  .button {
+    background-color: palevioletred;
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    padding: 0.15em;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: plum;
+  }
+
+  #filter {
+    background-color: palevioletred;
+    font-size: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: #000;
+    padding: 0.2em;
+    color: #000;
+    text-decoration: none;
+  }
+
+  #filter:hover {
+    background-color: plum;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #000;
+  }
+
+  table {
+    margin-bottom: 10px;
+  }
+
+  .dark-theme {
+    background-color: #222;
+    color: lavenderblush;
+    transition: 2s ease;
+    font-family: 'Rajdhani', sans-serif;
+  }
+  
+  .dark-theme button {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .dark-theme .button {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .dark-theme #filter {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  div {
+    flex: 0 0 90%;
+    margin: 5px;
+  }
