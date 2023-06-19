@@ -1,25 +1,41 @@
-const form = document.getElementById("form");
-const title = document.getElementById("title");
-const description = document.getElementById("description");
-const importance = document.getElementById("importance");
-const duedate = document.getElementById("duedate");
+const notes = [];
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+const noteList = document.getElementById('noteList');
+const noteForm = document.getElementById('noteForm');
 
-  const message = `
-    Title: ${title.value}
-    Description: ${description.value}
-    Importance: ${importance.value}
-    Duedate: ${duedate.value}
-  `;
+function renderNotes() {
+  noteList.innerHTML = '';
+  notes.forEach((note, index) => {
+    const noteElement = document.createElement('table');
+    noteElement.className = 'note';
+    noteElement.innerHTML = 
+    `
+    <tr>
+      <th onclick="sortTable()">Status</th>
+      <th onclick="sortTable()">Titel</th>
+      <th onclick="sortTable()">Fälligkeitsdatum</th>
+      <th onclick="sortTable()">Erstellungsdatum</th>
+      <th onclick="sortTable()">Wichtigkeit</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><input type="checkbox" id="status" value="">Offen</td>
+      <td>${note.title}</td>
+      <td>${note.description}</td>
+      <td>${note.importance}</td>
+      <td>${note.duedate}</td>
+      <td><button onclick="editNote"(${index})">Bearbeiten</button></td>
+    </tr>
+    `;
+    noteList.appendChild(noteElement);
+  });
+}
 
-  alert(message);
-});
-
-const darkButton = document.getElementById("dark-button");
-
-darkButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
+renderNotes();
+  document.addEventListener(DOMException, function() {
+    noteForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    addNote();
+  });
 });
 

@@ -8,6 +8,12 @@
     margin-bottom: 20px;
 }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
   body {
     font-family: 'Quicksand', sans-serif;
     display: flex;
@@ -36,7 +42,8 @@
   
   form {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
   
   label {
@@ -57,6 +64,7 @@
   
   h1 {
     font-size: 25px;
+    text-align: center;
   }
 
   button {
